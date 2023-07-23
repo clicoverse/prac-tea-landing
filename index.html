@@ -9,6 +9,10 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Google font: Manrope -->
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--Tailwind Custom style -->
   <script>
     tailwind.config = {
@@ -31,10 +35,82 @@
 
 <body class="font-manrope">
   <header>
-
+    <div class="hero max-w-screen-xl mx-8 md:mx-16 lg:mx-24">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <div class="pt-10">
+          <img src="/images/banner.png" class="max-w-md " />
+          <!-- rating badge -->
+          <div class="flex items-center gap-4 bg-white drop-shadow-lg p-5 w-64 rounded-md -mt-16">
+            <i class="fa-solid fa-star text-3xl text-amber-400"></i>
+            <div>
+              <h3 class="text-3xl">5.00</h3>
+              <p class="text-sm">Trust Piolot Rating</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h1 class="text-7xl font-extrabold">It's good <br>
+            tea time at The
+            <br> Tea House
+          </h1>
+          <p class="text-lg py-6">Tea and Botanical Solutions Supplier Give Optimum <br>
+            Satisfaction To Your Taste Buds.</p>
+          <button class="btn btn-primary">Explore More <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+        </div>
+      </div>
+    </div>
   </header>
   <main>
-
+    <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+      <div class="text-center pb-10">
+        <h3 class="text-5xl font-extrabold text-[#1C1C1C] py-5">Our Featured Products</h3>
+        <p class="text-sm font-medium text-[#777]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,
+          <br> by injected humour, or randomised words which don't look
+          even slightly believable. </p>
+      </div>
+      <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <!-- first product -->
+        <div class="card bg-[#f4f4f4] shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="/images/tea-1.png" alt="milk" class="milk tea" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Milk Tea</h2>
+            <p>Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
+        <!-- Second product -->
+        <div class="card bg-[#f4f4f4] shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="/images/tea-2.png" alt="black" class="black tea" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Black Tea</h2>
+            <p>Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
+        <!-- third product -->
+        <div class="card bg-[#f4f4f4] shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="/images/tea-3.png" alt="lemon" class="lemon tea" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Lemon Tea</h2>
+            <p>Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
+        <!-- fourth product -->
+        <div class="card bg-[#f4f4f4] shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="/images/tea-4.png" alt="green" class="green tea" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Green Tea</h2>
+            <p class="text-center">Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
 
